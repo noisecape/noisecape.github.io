@@ -1,15 +1,72 @@
-<!DOCTYPE HTML>
-
+<!DOCTYPE html>
 <html>
-    <head>
-		<title>Tommaso Capecchi</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-    </head>
-    
-    <body class="is-preload">
-        <p>MIPS 32 CPU Simulation</p>
-    </body>
+<title>Final Project Computer Architecture</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+<body class="w3-light-grey">
 
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+
+    <!-- Right Column -->
+    <div class="w3-center">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-black w3-padding-16"><i class="fa fa-laptop fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>MIPS 32: Computer Architectures Final Project</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><a href= "https://github.com/noisecape/Computer-Architecture-Project">Source Code</a></h5>
+          <h6 class="w3-text-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2017 - Jun 2017</h6>
+          <p style="text-align: justify;">The project is part of the class "Computer Architectures" of the coursework in Computer Science at the University of Florence. The project required the completion of three individual programs; the programming language used is the MIPS 32 Assembly. Should you see the main project page on my github account <a href= "https://github.com/noisecape/Operative-System-Final-Project">(Github)</a> for a complete overview.<p></p>
+          </p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>First Program: String Analysis</b></h5>
+          <p style="text-align: justify;">This program takes in input a string with a maximum length of 100 characters, and "traslates" each subsequence of characters (which represents a digit in italian language) separated by a blank space, with the respective numerical digit. Any subsequence of characters that doesn't represent a digit, will be translated with "?". Below we can see some examples respectively of inputs and outputs of the program: <ul style="text-align: justify;"><li>uno due tre 4 -> 1 2 3 ?</li><li>ciao uno ciao tre cinque -> ? 1 ? 3 5</li></ul></p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Second Program: Recursive procedures</b></h5>
+          <p style="text-align: justify;">The program realize the following procedure:</p>
+          <p><img src="/Users/tommasocapecchi/Desktop/WebSite/images/exercises/s1.png" align="w3-center"></p>
+          <p><img src="/Users/tommasocapecchi/Desktop/WebSite/images/exercises/s2.png" align="w3-center"></p>
+          <p style="text-align: justify;">To implement this procedure, we had to use the stack memory to preserve the values of the previous recursive calls. The value of the variable n needs to be [1,8].</p>
+          <hr>
+        </div>
+
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Third Program: Matrix Operations </b></h5>
+          <p style="text-align: justify;">This program allow the user to insert several values (maximum 4) to create two nxn matrices, required to perform most of the common used operations between them, respectively: the sum, the subtraction, the product. Thanks to a basic user interface, the user can choose the desired operation. In case we want to change the values to create two new matrices, we reuse those memory locations, overriding the previous values: this is made possible by storing in the stack the adressess of the matrices.</p>
+          
+        </div>
+        
+      </div>
+
+      
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Find me on:</p>
+  <i class="fa fa-github w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+</footer>
+
+</body>
 </html>

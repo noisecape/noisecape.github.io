@@ -1,15 +1,62 @@
-<!DOCTYPE HTML>
-
+<!DOCTYPE html>
 <html>
-    <head>
-		<title>Tommaso Capecchi</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-    </head>
-    
-    <body class="is-preload">
-        <p>Stratego Game</p>
-    </body>
+<title>Stratego Player</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+<body class="w3-light-grey">
 
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+
+    <!-- Right Column -->
+    <div class="w3-center">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-black w3-padding-16"><i class="fa fa-laptop fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>Stratego Winning Strategy</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><a href= "https://github.com/noisecape/Stratego_Game">Source Code</a></h5>
+          <h6 class="w3-text-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2016 - Sep 2016</h6>
+          <p style="text-align: justify;">The project is part of the class "Programming" of the coursework in Computer Science at the University of Florence. The project required to create a winning strategy for the board game "Stratego". The required task was not to recreate the game, but to implement a player with a strategy, capable of playing and (preferably) winning.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Implementation</b></h5>
+          <p style="text-align: justify;">Firstly, a Client needs to send a connection request to the server to being able to send messages. Every client in the network is uniquely identified by its PID or the id of the process responsable for that client. The request is made possible by trying to open the named pipe created by the Server, ("ServerPipe") which is necessary for the acceptance of the client connection and to forward the messages to other clients. Once the client is correctly connected to the server, it can send messages: every time a message is sent, the server checks if the adressee is connected and it will launch the signal SIGURS2 (to handle the situation where the addressee is not connect to the server, thus it's unreachable) or SIGURS1 (to alert the addressee that it will receive a message). Moreover, a client can also send a request of disconnection to the server, which will be handled by the server itself.</p>
+          <hr>
+          <p style="text-align: justify;">The image below shows how a user can connect to the server by typing 1 in the terminal. The server will confirm its connection by printing on video the message "Hello".</p>
+          <img src="https://raw.githubusercontent.com/noisecape/Operative-System-Final-Project/master/Esercizio3/Immagini/RicevutoMessaggio.png" style="max-width: 700px">
+          <hr>
+          <p style="text-align: justify;">In this image we can see how a client can send a message to multiple clients connected to the server. Firstly the sender has to specify the correct operation by typing 3 into the terminal; next it will specify the text message. Then, the server will ask to insert the clients id which will be the adreessees of the message. By pressing "enter" the message will be sent.</p>
+          <img src="https://raw.githubusercontent.com/noisecape/Operative-System-Final-Project/master/Esercizio3/Immagini/InvioMessaggio.png" style="max-width: 700px">
+          <hr>
+          <h5 class="w3-opacity"><b>Lessons Learnt</b></h5>
+          <p style="text-align: justify;"><ul style="text-align: justify;"><li>Learnt how to manage processes in C.</li><li>Learnt how to manage signals in C.</li><li>Learnt how to dynamically allocate/deallocate memory.</li><li>Deep understanding of Client-Server architecture.</li><li>Deep understanding of how Operative Systems works, specifically Linux.</li><li>Deep understading and usage of various C Standard Libraries.</li></ul></p>
+        </div>
+        
+      </div>
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Find me on:</p>
+  <i class="fa fa-github w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+</footer>
+
+</body>
 </html>
